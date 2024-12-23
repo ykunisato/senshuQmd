@@ -24,7 +24,7 @@ abstract: |
   This document is only a demo explaining how to use the template.
 keywords: [template, demo]
 reference-section-title: References
-bibliography: bibliography.bib  
+bibliography: bibliography.bib
 ---
 
 ## Introduction {#sec-intro}
