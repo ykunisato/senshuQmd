@@ -4,14 +4,7 @@
 
 ## 新規にプロジェクを作成する場合のインストール法
 
-新規にプロジェクを作成する場合は，以下のようにインストールします。もし，R上で行う場合は，quartoパッケージを使って以下のようにインストールします。
-
-```r
-library(quarto)
-quarto_use_template("ykunisato/senshuQmd")
-```
-
-Terminalなどでインストールする場合は，以下のようにインストールします。
+新規にプロジェクを作成する場合は，Terminalなどで以下のようにインストールします。
 
 ```bash
 quarto use template ykunisato/senshuQmd
@@ -19,14 +12,7 @@ quarto use template ykunisato/senshuQmd
 
 ## 既存のプロジェクに作成する場合のインストール法
 
-既存のプロジェクに作成する場合は，以下のようにインストールします。もし，R上で行う場合は，quartoパッケージを使って以下のようにインストールします。
-
-```r
-library(quarto)
-quarto_add("ykunisato/senshuQmd")
-```
-
-Terminalなどでインストールする場合は，以下のようにインストールします。
+既存のプロジェクに作成する場合は，Terminalなどで以下のようにインストールします。
 
 ```bash
 quarto add ykunisato/senshuQmd
