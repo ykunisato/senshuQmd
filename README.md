@@ -1,6 +1,6 @@
 # senshuQmd
 
-こちらは専修大学人間科学部心理学科での卒業論文・修士論文作成用のQuartoテンプレートです。
+こちらは専修大学人間科学部心理学科での卒業論文・修士論文作成用のQuartoテンプレートです。本Quartoテンプレートの引用文献処理には，[biblatex-jpa](https://github.com/sbtseiji/biblatex-jpa)を使っております[詳細](template/README.md)。
 
 ## 新規にプロジェクを作成する場合のインストール法
 
