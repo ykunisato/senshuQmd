@@ -1,0 +1,47 @@
+% フォントサイズと行間の設定
+\usepackage{setspace}
+\renewcommand{\normalsize}{\fontsize{12pt}{16.5pt}\selectfont}
+\doublespacing
+
+% ページ番号を下部中央に
+\usepackage{fancyhdr}
+\pagestyle{plain}
+\fancypagestyle{plain}{
+  \fancyhf{} 
+  \fancyfoot[C]{\thepage} 
+  \renewcommand{\headrulewidth}{0pt}}
+
+% ランニングヘッドを無効化
+\pagestyle{plain}
+
+% ページサイズとジオメトリの設定
+\usepackage{geometry}
+\geometry{
+  a4paper,
+  left=4.1cm,
+  right=4.1cm,
+  top=3.0cm,
+  bottom=3.0cm,
+  footskip=2.0cm
+}
+
+% セクションの書式設定
+\usepackage{titlesec}
+% sectionを中央揃えに
+\titleformat{\section}
+  {\normalfont\Large\bfseries\centering}  % 中央揃え
+  {\thesection}
+  {1em}
+  {}
+% subsectionを左揃えに（デフォルトのまま）
+\titleformat{\subsection}
+  {\normalfont\large\bfseries}  % 左揃え
+  {\thesubsection}
+  {1em}
+  {}
+% subsubsectionも左揃えに（デフォルトのまま）
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries}  % 左揃え
+  {\thesubsubsection}
+  {1em}
+  {}

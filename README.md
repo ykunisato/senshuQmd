@@ -1,53 +1,47 @@
-# Article Format Template (AFT)
+# senshuQmd
 
-<!-- REMOVE THIS IN YOUR FORMAT TEMPLATE -->
-> Template for creating a new journal article format for Quarto. 
->
-> This repository is a [Github Repository Template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) that you should use as a starter to create a new extension format. Click on the "Use this template" button at the top !
->
-> See information about how-to use this repo template inside the template file or its rendered version at <https://quarto-journals.github.io/article-format-template/>
+こちらは専修大学人間科学部心理学科での卒業論文・修士論文作成用のQuartoテンプレートです。
 
-<!-- ALL THE BELOW SHOULD BE IN YOUR README -->
+## 新規にプロジェクを作成する場合のインストール法
 
-This is a Quarto template that assists you in creating a manuscript for Article Format Template journals. You can learn more about ...
+新規にプロジェクを作成する場合は，以下のようにインストールします。もし，R上で行う場合は，quartoパッケージを使って以下のようにインストールします。
 
-## Creating a New Article
+```r
+library(quarto)
+quarto_use_template("ykunisato/senshuQmd")
+```
 
-You can use this as a template to create an article for an AFT journal. To do this, use the following command:
+Terminalなどでインストールする場合は，以下のようにインストールします。
 
 ```bash
-quarto use template quarto-journals/article-format-template
+quarto use template ykunisato/senshuQmd
 ```
 
-This will install the extension and create an example qmd file and bibiography that you can use as a starting place for your article.
+## 既存のプロジェクに作成する場合のインストール法
 
-## Installation For Existing Document
+既存のプロジェクに作成する場合は，以下のようにインストールします。もし，R上で行う場合は，quartoパッケージを使って以下のようにインストールします。
 
-You may also use this format with an existing Quarto project or document. From the quarto project or document directory, run the following command to install this format:
+```r
+library(quarto)
+quarto_add("ykunisato/senshuQmd")
+```
+
+Terminalなどでインストールする場合は，以下のようにインストールします。
 
 ```bash
-quarto add quarto-journals/article-format-template
+quarto add ykunisato/senshuQmd
 ```
 
-## Usage
 
-To use the format, you can use the format names `aft-pdf` and `aft-html`. For example:
+## 使用法
 
-```bash
-quarto render article.qmd --to aft-pdf
+"paper.qmd"を開いて，Renderをクリックください。専修大学人間科学部心理学科のフォーマットでPDFが出力されます。
+
+## その他
+
+PDFで十分なのですが，どうしてもWordがほしい場合もあるかもしれません。その場合は，以下のコマンドを実施して，Word形式で出力できます。
+
+```
+pandoc paper2.tex -o paper2.docx --toc --reference-doc=template/senshu.docx --number-sections -V lang=ja-JP --pdf-engine=lualatex
 ```
 
-or in your document yaml
-
-```yaml
-format:
-  pdf: default
-  aft-pdf:
-    keep-tex: true    
-```
-
-You can view a preview of the rendered template at <https://quarto-journals.github.io/article-format-template/>.
-
-## Format Options
-
-This format does not have specific format option. Include documentation of such option otherwise. See <https://github.com/quarto-journals/elsevier#format-options> for an example.
