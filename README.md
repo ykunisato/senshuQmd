@@ -1,5 +1,7 @@
 # senshuQmd
 
+<img src="style-guide/senshuQmd.png" align="right" alt="senshuQmd" width="180" />
+
 こちらは専修大学人間科学部心理学科での卒業論文・修士論文作成用のQuartoテンプレートです。本Quartoテンプレートの引用文献処理には，[biblatex-jpa](https://github.com/sbtseiji/biblatex-jpa)を使っております[詳細](template/README.md)。
 
 ## テンプレートの使用法
