@@ -1,0 +1,24 @@
+title: 専修大学心理学科 卒論・修論テンプレート
+author: 国里愛彦
+version: 0.1.0
+quarto-required: ">= 1.4"
+contributes:
+  formats:
+    pdf:
+      documentclass: ltjsbook
+      pdf-engine: lualatex
+      cite-method: biblatex
+      biblio-style: jpa
+      keep-tex: true
+      include-in-header: header.tex
+      format-resources:
+        - header.tex
+        - jpa.bbx
+        - jpa.cbx
+        - jpa.dbx
+    docx:
+      reference-doc: senshu.docx
+      toc: true
+      number-sections: true
+      format-resources:
+        - senshu.docx

@@ -1,14 +1,7 @@
 ---
 title: 'タイトル:'
 author: '学籍番号: 氏名:'
-format:
-  pdf:
-    keep-tex: true
-    documentclass: ltjsbook
-    pdf-engine: lualatex
-    cite-method: biblatex
-    biblio-style: template/jpa
-    include-in-header: template/header.tex
+format: senshu-pdf
 bibliography: bibliography.bib
 editor: visual
 ---
