@@ -4,7 +4,8 @@
 
 こちらは専修大学人間科学部心理学科での卒業論文・修士論文作成用のQuartoテンプレートです。まだ完成品というわけでなく，おそらく色々と不具合もあるのではないかと思います。不具合があれば，Issuesか国里愛彦(専修大学)に報告ください（口頭，メールフォーム，メール，Xなど，どこからでも構いません）。
 
-本Quartoテンプレートの引用文献処理には，[biblatex-jpa](https://github.com/sbtseiji/biblatex-jpa)を使っています[詳細はこちら](_extensions/senshu/README.md)。
+本拡張機能は[biblatex-jpa（日本心理学会風文献スタイル，2022年版）](https://github.com/sbtseiji/biblatex-jpa)の `jpa.bbx` / `jpa.cbx` / `jpa.dbx` を同梱しています。これらのファイルは2026/5/7時点で配布元からダウンロードしたもので，変更は加えていません。
+
 
 ## テンプレートの使用法（新規プロジェクトとして使う）
 
