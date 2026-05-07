@@ -9,7 +9,6 @@ contributes:
       pdf-engine: lualatex
       cite-method: biblatex
       biblio-style: jpa
-      keep-tex: true
       include-in-header: header.tex
       include-before-body: before-body.tex
       format-resources:
