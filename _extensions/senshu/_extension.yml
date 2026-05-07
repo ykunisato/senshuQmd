@@ -13,8 +13,6 @@ contributes:
       include-in-header: header.tex
       include-before-body: before-body.tex
       format-resources:
-        - header.tex
-        - before-body.tex
         - jpa.bbx
         - jpa.cbx
         - jpa.dbx
